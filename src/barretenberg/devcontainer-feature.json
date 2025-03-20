@@ -1,14 +1,16 @@
 {
 	"name": "Barretenberg",
-	"id": "bb",
-	"version": "1.0.0",
+	"id": "barretenberg",
+	"version": "1.1.2",
 	"description": "A feature to install Barretenberg",
 	"options": {
 		"version": {
 			"type": "string",
-			"default": "nargo",
+			"default": "",
 			"description": "The version of Barretenberg to install. Defaults to the latest Nargo compatible version."
 		}
 	},
-	"installsAfter": ["./noir"]
+	"dependsOn": {
+		"ghcr.io/signorecello/noir-bb-devcontainer-feature/noir:1": {}
+	}
 }

@@ -10,6 +10,14 @@ fi
 
 apt update && apt install -y curl bash git tar gzip libc++-dev unzip jq
 
-echo "curl -L https://raw.githubusercontent.com/AztecProtocol/aztec-packages/refs/heads/master/barretenberg/bbup/install | bash" >> /etc/profile.d/noir.sh
-echo "\$HOME/.bb/bbup ${VERSION}" >> /etc/profile.d/noir.sh
-echo "PATH=\$HOME/.bb/bin:$PATH" >> /etc/profile.d/noir.sh
+cat >> /etc/profile.d/noir.sh << EOF
+
+curl -L https://raw.githubusercontent.com/AztecProtocol/aztec-packages/refs/heads/master/barretenberg/bbup/install | bash
+
+PATH=\$HOME/.bb/bin:\$PATH
+bash \$HOME/.bb/bbup ${VERSION}
+
+EOF
+
+chmod +x /etc/profile.d/noir.sh
+chmod 755 /etc/profile.d/noir.sh

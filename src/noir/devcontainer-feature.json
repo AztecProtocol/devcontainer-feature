@@ -1,13 +1,13 @@
 {
-	"name": "Nargo",
-	"id": "nargo",
-	"version": "1.0.0",
-	"description": "A feature to install Nargo",
+	"name": "Noir",
+	"id": "noir",
+	"version": "1.1.2",
+	"description": "A feature to install Noir",
 	"options": {
 		"version": {
 			"type": "string",
-			"default": "latest",
-			"description": "The version of Nargo to install"
+			"default": "",
+			"description": "The version of Noir to install"
 		}
 	}
 }
