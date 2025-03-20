@@ -1,0 +1,35 @@
+{
+    "default": {
+        "image": "mcr.microsoft.com/devcontainers/base:focal",
+        "features": {
+            "noir": {
+                "version": ""
+            },
+            "barretenberg": {
+                "version": ""
+            }
+        }
+    },
+    "nightly": {
+        "image": "mcr.microsoft.com/devcontainers/base:focal",
+        "features": {
+            "noir": {
+                "version": "nightly"
+            },
+            "barretenberg": {
+                "version": ""
+            }
+        }
+    },
+    "semantic": {
+        "image": "mcr.microsoft.com/devcontainers/base:focal",
+        "features": {
+            "noir": {
+                "version": "1.0.0-beta.3"
+            },
+            "barretenberg": {
+                "version": "0.72.1"
+            }
+        }
+    }
+}

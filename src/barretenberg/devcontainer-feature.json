@@ -1,0 +1,14 @@
+{
+	"name": "Barretenberg",
+	"id": "bb",
+	"version": "1.0.0",
+	"description": "A feature to install Barretenberg",
+	"options": {
+		"version": {
+			"type": "string",
+			"default": "nargo",
+			"description": "The version of Barretenberg to install. Defaults to the latest Nargo compatible version."
+		}
+	},
+	"installsAfter": ["./noir"]
+}
