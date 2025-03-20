@@ -70,7 +70,4 @@ You can test the features using the Dev Container CLI:
 ```bash
 devcontainer features test --global-scenarios-only .
 ```
-
-## License
-
-This project is available under the MIT license.
+ 
