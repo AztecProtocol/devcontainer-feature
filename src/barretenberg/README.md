@@ -15,7 +15,7 @@ A feature to install Barretenberg
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | The version of Barretenberg to install. Defaults to the latest Nargo compatible version. | string | nargo |
+| version | The version of Barretenberg to install. Defaults to the latest Nargo compatible version. | string | - |
 
 
 
