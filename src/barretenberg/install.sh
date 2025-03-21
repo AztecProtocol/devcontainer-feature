@@ -11,7 +11,7 @@ fi
 apt update && apt install -y curl bash git tar gzip libc++-dev unzip jq
 
 
-cat >> /etc/profile.d/noir.sh << EOF
+cat >> /etc/profile.d/99_bb.sh << EOF
 
 curl -L https://raw.githubusercontent.com/AztecProtocol/aztec-packages/refs/heads/master/barretenberg/bbup/install | bash
 
@@ -20,5 +20,5 @@ bash \$HOME/.bb/bbup ${VERSION}
 
 EOF
 
-chmod +x /etc/profile.d/noir.sh
-chmod 755 /etc/profile.d/noir.sh
+chmod +x /etc/profile.d/99_bb.sh
+chmod 755 /etc/profile.d/99_bb.sh
