@@ -1,22 +1,24 @@
 
-# Nargo
+# Noir (noir)
 
-A feature that installs the Nargo `cli` tool `nargo` and its installer `noirup`.
+A feature to install Noir
 
 ## Example Usage
 
-You can specify any version of `noir`, or leave empty to install the latest stable. Pass `nightly` for the latest nightly version.
-
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature/barretenberg:1": {
-        "version": "nightly"
-    }
+    "ghcr.io/signorecello/noir-bb-devcontainer-feature/noir:1": {}
 }
 ```
 
 ## Options
 
-| Options Id | Description            | Type   | Default Value |
-| ---------- | ---------------------- | ------ | ------------- |
-| version    | The version to install | string | nargo         |
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| version | The version of Noir to install | string | latest |
+
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/signorecello/noir-bb-devcontainer-feature/blob/main/src/noir/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
