@@ -7,7 +7,7 @@ A feature to install Barretenberg
 
 ```json
 "features": {
-    "ghcr.io/signorecello/noir-bb-devcontainer-feature/barretenberg:1": {}
+    "ghcr.io/AztecProtocol/devcontainer-feature/barretenberg:1": {}
 }
 ```
 
@@ -15,10 +15,10 @@ A feature to install Barretenberg
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | The version of Barretenberg to install. Defaults to the latest Nargo compatible version. | string | nargo |
+| version | The version of Barretenberg to install. Defaults to the latest Nargo compatible version. | string | - |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/signorecello/noir-bb-devcontainer-feature/blob/main/src/barretenberg/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/AztecProtocol/devcontainer-feature/blob/main/src/barretenberg/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
