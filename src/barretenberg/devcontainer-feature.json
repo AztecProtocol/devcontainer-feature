@@ -6,7 +6,7 @@
 	"options": {
 		"version": {
 			"type": "string",
-			"default": "nargo",
+			"default": "",
 			"description": "The version of Barretenberg to install. Defaults to the latest Nargo compatible version."
 		}
 	},

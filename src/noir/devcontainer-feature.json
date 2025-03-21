@@ -6,7 +6,7 @@
 	"options": {
 		"version": {
 			"type": "string",
-			"default": "latest",
+			"default": "",
 			"description": "The version of Noir to install"
 		}
 	}
