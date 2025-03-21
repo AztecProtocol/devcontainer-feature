@@ -1,22 +1,24 @@
 
-# Barretenberg
+# Barretenberg (barretenberg)
 
-A feature that installs the Barretenberg `cli` tool `bb` and its installer `bbup`.
+A feature to install Barretenberg
 
 ## Example Usage
 
-You can specify any version of `bb`, or leave empty to match with an existent version of `nargo` on the container.
-
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature/barretenberg:1": {
-        "version": "0.80.0"
-    }
+    "ghcr.io/signorecello/noir-bb-devcontainer-feature/barretenberg:1": {}
 }
 ```
 
 ## Options
 
-| Options Id | Description            | Type   | Default Value |
-| ---------- | ---------------------- | ------ | ------------- |
-| version    | The version to install | string | nargo         |
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| version | The version of Barretenberg to install. Defaults to the latest Nargo compatible version. | string | nargo |
+
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/signorecello/noir-bb-devcontainer-feature/blob/main/src/barretenberg/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
