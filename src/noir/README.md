@@ -15,7 +15,7 @@ A feature to install Noir
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | The version of Noir to install | string | latest |
+| version | The version of Noir to install | string | - |
 
 
 
