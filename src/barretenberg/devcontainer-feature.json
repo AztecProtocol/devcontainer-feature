@@ -1,6 +1,6 @@
 {
 	"name": "Barretenberg",
-	"id": "bb",
+	"id": "barretenberg",
 	"version": "1.0.0",
 	"description": "A feature to install Barretenberg",
 	"options": {
