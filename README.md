@@ -6,58 +6,12 @@ This repository contains [Dev Container Features](https://containers.dev/impleme
 
 This repository provides the following features:
 
-### 1. Nargo CLI (`nargo`)
-
-Installs the Noir language compiler and toolchain.
-
-- **ID**: `nargo`
-- **Description**: Installs the Nargo CLI tool and its installer `noirup`
-- **Options**:
-  - `version`: The version of Nargo to install (default: `latest`, can be set to `nightly` or a specific version)
-
-### 2. Barretenberg (`bb`)
-
-Installs the Barretenberg prover backend for Noir.
-
-- **ID**: `bb` 
-- **Description**: Installs the Barretenberg CLI tool and its installer `bbup`
-- **Options**:
-  - `version`: The version of Barretenberg to install (default: `nargo`, meaning it will match with an existing Nargo installation)
+- Nargo CLI and Noirup
+- BB CLI and BBup
 
 ## Usage
 
-Add these features to your `devcontainer.json` file:
-
-```json
-"features": {
-    "ghcr.io/yourusername/feature-starter/nargo:1.0.0": {},
-    "ghcr.io/yourusername/feature-starter/bb:1.0.0": {}
-}
-```
-
-### Examples
-
-Install the latest stable Nargo and Barretenberg:
-
-```json
-"features": {
-    "ghcr.io/signorecello/feature-starter/nargo:1.0.0": {},
-    "ghcr.io/signorecello/feature-starter/bb:1.0.0": {}
-}
-```
-
-Install the nightly version of Nargo and a specific version of Barretenberg:
-
-```json
-"features": {
-    "ghcr.io/signorecello/feature-starter/nargo:1.0.0": {
-        "version": "nightly"
-    },
-    "ghcr.io/signorecello/feature-starter/bb:1.0.0": {
-        "version": "0.80.0"
-    }
-}
-```
+Check the READMEs in `src/barretenberg` and `src/noir` for usage instructions
 
 ## Development
 
