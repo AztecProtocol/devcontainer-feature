@@ -7,7 +7,7 @@ on:
     workflow_dispatch:
 
 jobs:
-    test-global:
+    test-noir-barretenberg:
         runs-on: ubuntu-latest
         continue-on-error: true
         steps:
@@ -17,4 +17,16 @@ jobs:
               run: npm install -g @devcontainers/cli
 
             - name: "Testing global scenarios"
-              run: devcontainer features test --global-scenarios-only .
+              run: devcontainer features test -f noir_barretenberg
+
+    test-aztec-sandbox:
+        runs-on: ubuntu-latest
+        continue-on-error: true
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: "Install latest devcontainer CLI"
+              run: npm install -g @devcontainers/cli
+
+            - name: "Testing aztec-sandbox feature"
+              run: devcontainer features test -f aztec-sandbox
