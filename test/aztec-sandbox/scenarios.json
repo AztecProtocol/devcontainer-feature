@@ -1,0 +1,17 @@
+{
+    "default": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+        "features": {
+            "aztec-sandbox": {}
+        }
+    },
+    "with-options": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+        "features": {
+            "aztec-sandbox": {
+                "autoStart": false,
+                "importTestAccounts": false
+            }
+        }
+    }
+}
